@@ -1,4 +1,4 @@
-package com.bombieri;
+package com.bombieri.tests;
 
 import org.junit.After;
 import org.junit.Before;
