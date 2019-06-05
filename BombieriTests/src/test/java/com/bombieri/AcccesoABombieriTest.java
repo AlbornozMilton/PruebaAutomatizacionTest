@@ -21,8 +21,7 @@ public class AcccesoABombieriTest {
 		 //ChromeOptions options = new ChromeOptions();
 		 //options.setHeadless(true);
 		 driver = new ChromeDriver();
-	    //js = (JavascriptExecutor) driver;
-	   // vars = new HashMap<String, Object>();
+
 	  }
 	  
 	  @After
