@@ -7,19 +7,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+
 
 public class AcccesoABombieriTest {
 
 	private WebDriver driver;
-	  //private Map<String, Object> vars;
-	  //JavascriptExecutor js;
 	  
 	  @Before
 	  public void setUp() {
 		 System.getProperties().setProperty("webdriver.chrome.driver", "chromedriver.exe");
-		 //ChromeOptions options = new ChromeOptions();
-		 //options.setHeadless(true);
 		 driver = new ChromeDriver();
 
 	  }
