@@ -5,6 +5,7 @@
   import org.openqa.selenium.By; import org.openqa.selenium.Keys; import
   org.openqa.selenium.WebDriver; import
   org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
   
   public class AccesoMercLibreTest {
   
@@ -12,15 +13,16 @@
   
   @Before 
   public void setUp() throws Exception {
-  System.getProperties().setProperty("webdriver.chrome.driver",
-  "chromedriver.exe"); driver = new ChromeDriver(); }
+  System.setProperty("webdriver.gecko.driver", "geckodriver.exe"); 
+  driver = new FirefoxDriver(); }
   
   @After 
   public void tearDown() throws Exception { driver.quit(); }
   
   
   @Test 
-  public void merLibre() { driver.get("https://www.google.com/");
+  public void merLibre() { 
+	  driver.get("https://www.google.com/");
   driver.manage().window().maximize();
   driver.findElement(By.name("q")).click();
   driver.findElement(By.name("q")).sendKeys("mercado libre");
