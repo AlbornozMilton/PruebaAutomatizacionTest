@@ -10,14 +10,17 @@
   
   private WebDriver driver;
   
-  @Before public void setUp() throws Exception {
+  @Before 
+  public void setUp() throws Exception {
   System.getProperties().setProperty("webdriver.chrome.driver",
   "chromedriver.exe"); driver = new ChromeDriver(); }
   
-  @After public void tearDown() throws Exception { driver.quit(); }
+  @After 
+  public void tearDown() throws Exception { driver.quit(); }
   
   
-  @Test public void merLibre() { driver.get("https://www.google.com/");
+  @Test 
+  public void merLibre() { driver.get("https://www.google.com/");
   driver.manage().window().maximize();
   driver.findElement(By.name("q")).click();
   driver.findElement(By.name("q")).sendKeys("mercado libre");
